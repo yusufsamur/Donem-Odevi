@@ -65,14 +65,14 @@ int main()
     int soruSayi;
 
     printf("*******Kim Milyoner Olmak Ister'e hos geldiniz.*******\n");
-    Sleep(0);
+    Sleep(1500);
     printf("Yarismamiz 8 sorudan olusmaktadir.\n");
-    Sleep(0);
+    Sleep(1500);
     printf("Ilk soru baraj sorusudur daha sonraki sorularda q yazarak ayrilma hakkiniz bulunmaktadir.\n\n");
-    Sleep(0);
+    Sleep(1500);
     printf("*******1. SORU*******\n");
     printf("                                       1.000TL\n\n");
-    Sleep(0);
+    Sleep(1500);
 
     soruSayi = Rand();
     kontrol(soruSayi, cikacakSoru);
@@ -83,16 +83,16 @@ int main()
     {
 
         printf("\n");
-        Sleep(0);
+        Sleep(1500);
         printf("Cevabiniz: ");
         scanf("%s", &kullaniciCevap);
 
         cikacakSoru += 1;
         if (cevap == kullaniciCevap)
         {
-            Sleep(0);
+            Sleep(1500);
             printf("Tebrikler ! Dogru Cevap\n");
-            Sleep(0);
+            Sleep(1500);
             if (cikacakSoru != 8)
             {
                 system("cls");
@@ -101,7 +101,7 @@ int main()
             if (cikacakSoru == 7)
             {
                 printf("Son soruya ulastiniz\n");
-                Sleep(0);
+                Sleep(1500);
             }
             else if (cikacakSoru == 8)
             {
@@ -138,7 +138,7 @@ int main()
                 printf("                                       30.000TL\n\n");
                 break;
             }
-            Sleep(1000);
+            Sleep(1500);
             while (!kontrol(soruSayi, cikacakSoru))
             {
                 soruSayi = Rand();
@@ -148,7 +148,7 @@ int main()
         }
         else if (kullaniciCevap == 'q' || kullaniciCevap == 'Q')
         {
-            Sleep(0);
+            Sleep(1500);
             printf("Yarismadan cekildiniz.\n");
             switch (cikacakSoru)
             {
@@ -183,7 +183,7 @@ int main()
 
         else
         {
-            Sleep(0);
+            Sleep(1500);
             printf("Yanlis cevap ! Elendiniz.Dogru cevap: %c", cevap);
             break;
         }
