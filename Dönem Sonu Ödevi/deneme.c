@@ -35,7 +35,7 @@ int Rand()
 char Cevap(int sayi)
 {
 
-    char cevaplar[] = {'C', 'D', 'B', 'D', 'B', 'D', 'D', 'A', 'B', 'B', 'D', 'A', 'C', 'B', 'C', 'B', 'D', 'A', 'C', 'D'};
+    char cevaplar[] = {'C', 'D', 'B', 'D', 'B', 'D', 'D', 'A', 'B', 'B', 'C', 'A', 'C', 'B', 'C', 'B', 'D', 'A', 'C', 'D'};
 
     return cevaplar[sayi - 1];
 }
