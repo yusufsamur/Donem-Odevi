@@ -1,0 +1,3 @@
+"Pars" hangisinin diger adidir ?
+A-Vasak   B-Puma
+C-Leopar  D-Cita
